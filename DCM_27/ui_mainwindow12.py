@@ -8,12 +8,15 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+from pyqtgraph import PlotWidget
+import numpy as np
 
 
-class Ui_MainWindow(object):
+class Ui_DCM(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
@@ -487,7 +490,7 @@ class Ui_MainWindow(object):
         self.spinBox_32 = QSpinBox(self.groupBox_4)
         self.spinBox_32.setObjectName(u"spinBox_32")
         self.spinBox_32.setGeometry(QRect(290, 140, 42, 22))
-        self.graphicsView_4 = QGraphicsView(self.page_4)
+        self.graphicsView_4 = PlotWidget(self.page_4)
         self.graphicsView_4.setObjectName(u"graphicsView_4")
         self.graphicsView_4.setGeometry(QRect(0, 200, 671, 231))
         self.pushButton_7 = QPushButton(self.page_4)
@@ -506,6 +509,18 @@ class Ui_MainWindow(object):
         self.label_36.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "font: 75 14pt \"MS Shell Dlg 2\";")
         self.label_36.setAlignment(Qt.AlignCenter)
+        self.label_37 = QLabel(self.page_4)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setGeometry(QRect(800, 410, 111, 20))
+        self.label_37.setStyleSheet(u"color: rgb(255, 0, 0);\n"
+                                    "font: 75 9pt \"MS Shell Dlg 2\";")
+        self.label_37.setAlignment(Qt.AlignCenter)
+        self.label_38 = QLabel(self.page_4)
+        self.label_38.setObjectName(u"label_38")
+        self.label_38.setGeometry(QRect(760, 0, 151, 16))
+        self.label_38.setStyleSheet(u"color: rgb(255, 255, 0);\n"
+                                    "font: 75 9pt \"MS Shell Dlg 2\";")
+        self.label_38.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page_4)
 
         self.verticalLayout_5.addWidget(self.stackedWidget)
@@ -524,6 +539,9 @@ class Ui_MainWindow(object):
 
 
         QMetaObject.connectSlotsByName(MainWindow)
+
+        # self.pushButton.clicked.connect(lambda: self.draw())
+        # self.pushButton_2.clicked.connect(lambda: self.clear())
     # setupUi
 
     def retranslateUi(self, MainWindow):
@@ -581,5 +599,15 @@ class Ui_MainWindow(object):
         self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
         self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"Create Graph", None))
         self.label_36.setText(QCoreApplication.translate("MainWindow", u"VVI", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Disconnect!", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"*New Device Detected!", None))
     # retranslateUi
 
+    def draw(self):
+        x = np.random.normal(size=1000)
+        y = np.random.normal(size=(3,1000))
+        for i in range(3):
+            self.graphicsView.plot(x,y[i],pen=(i,3))
+
+    def clear(self):
+        self.graphicsView.clear()

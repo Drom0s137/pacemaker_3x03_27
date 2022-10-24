@@ -13,10 +13,10 @@ class MainWindow(QMainWindow):
         btn_quit = QPushButton("Quit", self)
         btn_quit.clicked.connect(QApplication.instance().quit)
         btn_quit.resize(btn_quit.sizeHint())
-        btn_quit.move(1200, 700)
+        btn_quit.move(190, 320)
         btn_quit.setStyleSheet('background-color:white')
 
-        self.setGeometry(400, 200, 1100, 700)
+        self.setGeometry(400, 200, 625, 500)
         self.setWindowTitle("Pacemaker DCM")
         self.setWindowIcon(QIcon('icons/pacemaker_device_icon.png'))
         # self.setStyleSheet('background-color:lightblue')

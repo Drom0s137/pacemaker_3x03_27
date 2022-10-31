@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'pacemakerA1'.
  *
- * Model version                  : 1.18
+ * Model version                  : 1.19
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Oct 17 15:41:28 2022
+ * C/C++ source code generated on : Mon Oct 17 16:08:50 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex

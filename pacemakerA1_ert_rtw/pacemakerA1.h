@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'pacemakerA1'.
  *
- * Model version                  : 1.18
+ * Model version                  : 1.19
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Oct 17 15:41:28 2022
+ * C/C++ source code generated on : Mon Oct 17 16:08:50 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -73,7 +73,7 @@ struct P_pacemakerA1_T_ {
   real_T Constant1_Value;              /* Expression: 500
                                         * Referenced by: '<Root>/Constant1'
                                         */
-  real_T Constant_Value;               /* Expression: 1
+  real_T Constant_Value;               /* Expression: 10
                                         * Referenced by: '<Root>/Constant'
                                         */
   real_T Constant2_Value;              /* Expression: 60000

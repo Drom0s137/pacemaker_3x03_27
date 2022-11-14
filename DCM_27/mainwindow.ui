@@ -13,8 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:'lightgrey'</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="welcomeMessage_label">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -34,6 +37,9 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:'yellow'</string>
+    </property>
     <property name="text">
      <string>Welcome to the DCM! </string>
     </property>
@@ -41,7 +47,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="usernameInput">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -50,8 +56,11 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white'</string>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="passwordInput">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -60,8 +69,11 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white'</string>
+    </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="username_label">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -70,11 +82,14 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black'</string>
+    </property>
     <property name="text">
      <string>Username:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="password_label">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -83,11 +98,14 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black'</string>
+    </property>
     <property name="text">
      <string>Password:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="login_button">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -96,11 +114,14 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white'</string>
+    </property>
     <property name="text">
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="newUser_label">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -109,11 +130,14 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:'black'</string>
+    </property>
     <property name="text">
      <string>New User? </string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="register_button">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -121,6 +145,9 @@
       <width>81</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:'white'</string>
     </property>
     <property name="text">
      <string>Register Now</string>

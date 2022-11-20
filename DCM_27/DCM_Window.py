@@ -7,7 +7,7 @@ from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTi
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide6.QtWidgets import *
 
-from ui_mainwindow12 import Ui_DCM
+from mainwindow13 import Ui_DCM
 
 class DCM(QMainWindow):
     def __init__(self):
@@ -44,7 +44,7 @@ class DCM(QMainWindow):
 
 
 
-# if __name__ == "__main__":
-#     app = QApplication(sys.argv)
-#     window = DCM()
-#     sys.exit(app.exec_())
+if __name__ == "__main__":
+     app = QApplication(sys.argv)
+     window = DCM()
+     sys.exit(app.exec_())

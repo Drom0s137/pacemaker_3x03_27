@@ -46,6 +46,18 @@ class RegistrationWindow(QWidget):
                     return True
             return False
 
+    def charactersCheck(self, text):
+        invalid = 0
+        for c in text:
+            #if (c=="(" or c==")" or c=="," or c=="." or c==" " or c=="&" or c=="%" or c=="^" or c=="*" or c=="=" or c=="+" or c=="/" or c=="|" or c=="[" or c=="]" or c=="{" or c=="}" or c==";" or c==":" or c=="'" or c=='"' or c=="<" or c==">" or c=="?"):
+            if ((ord(c)>=48 and ord(c)<=57) or (ord(c)>=65 and ord(c)<=90) or (ord(c)>=97 and ord(c)<=122) or ord(c)==45 or ord(c)==95):
+                pass
+            else:
+                invalid = 1
+        if (invalid==0):
+            return True
+        else:
+            return False
     def createButton_check(self):
         if (self.ui.get_create_button().isChecked() == False):
             if (self.ui.get_firstnameInput().text() == ""):
@@ -57,16 +69,19 @@ class RegistrationWindow(QWidget):
             if (self.ui.get_passwordInput().text() == ""):
                 print("Please enter a password!")
             if (self.ui.get_firstnameInput().text() != "" and self.ui.get_lastnameInput().text() != "" and self.ui.get_usernameInput().text() != "" and self.ui.get_passwordInput().text() != ""):
-                # Check if user is already registered
-                if self.userIsRegistered(self.ui.get_usernameInput().text()):
-                    print("User already exists! Please login or use a different username.")
-                elif (self.num_of_users() == 10):
-                    print("Sorry, the maximum users threshold (10) has already been reached...")
+                if (self.charactersCheck(self.ui.get_usernameInput().text())==False):
+                    print("Invalid characters used... Please use letters, numbers, dashes, and/or underscores only!")
                 else:
-                    with open('Local_Database.txt', 'a') as f:
-                        f.write("\n" + self.ui.get_usernameInput().text())
-                        f.write("\n" + self.ui.get_passwordInput().text())
-                    self.close()
+                    # Check if user is already registered
+                    if self.userIsRegistered(self.ui.get_usernameInput().text()):
+                        print("User already exists! Please login or use a different username.")
+                    elif (self.num_of_users() == 10):
+                        print("Sorry, the maximum users threshold (10) has already been reached...")
+                    else:
+                        with open('Local_Database.txt', 'a') as f:
+                            f.write("\n" + self.ui.get_usernameInput().text())
+                            f.write("\n" + self.ui.get_passwordInput().text())
+                        self.close()
 
     def backToLoginButton_check(self):
         if (self.ui.get_backToLogin_button().isChecked() == False):

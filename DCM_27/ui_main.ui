@@ -332,7 +332,11 @@ QPushButton:hover{
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
+<<<<<<< HEAD
+             <number>2</number>
+=======
              <number>3</number>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
             </property>
             <widget class="QWidget" name="page_1">
              <widget class="QGroupBox" name="groupBox">
@@ -340,7 +344,11 @@ QPushButton:hover{
                <rect>
                 <x>0</x>
                 <y>20</y>
+<<<<<<< HEAD
+                <width>371</width>
+=======
                 <width>541</width>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                 <height>201</height>
                </rect>
               </property>
@@ -402,6 +410,8 @@ QPushButton:hover{
                 <string>Atrial Pulse Width</string>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QLabel" name="label_7">
                <property name="geometry">
                 <rect>
@@ -454,6 +464,7 @@ QPushButton:hover{
                 <string>ARP</string>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
               <widget class="QSpinBox" name="spinBox">
                <property name="geometry">
                 <rect>
@@ -494,6 +505,8 @@ QPushButton:hover{
                 </rect>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QSpinBox" name="spinBox_5">
                <property name="geometry">
                 <rect>
@@ -534,6 +547,7 @@ QPushButton:hover{
                 </rect>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
              </widget>
              <widget class="QLabel" name="label_11">
               <property name="geometry">
@@ -607,7 +621,11 @@ color: rgb(255, 255, 255);</string>
                 <x>0</x>
                 <y>20</y>
                 <width>501</width>
+<<<<<<< HEAD
+                <height>141</height>
+=======
                 <height>191</height>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </rect>
               </property>
               <property name="styleSheet">
@@ -648,6 +666,8 @@ color: rgb(255, 255, 255);</string>
                 <string>Upper Rate Limit</string>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QLabel" name="label_12">
                <property name="geometry">
                 <rect>
@@ -680,6 +700,7 @@ color: rgb(255, 255, 255);</string>
                 <string>Atrial Pulse Width</string>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
               <widget class="QLabel" name="label_14">
                <property name="geometry">
                 <rect>
@@ -712,6 +733,8 @@ color: rgb(255, 255, 255);</string>
                 <string>Ventricular Pulse Width</string>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QLabel" name="label_16">
                <property name="geometry">
                 <rect>
@@ -744,6 +767,7 @@ color: rgb(255, 255, 255);</string>
                 <string>ARP</string>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
               <widget class="QSpinBox" name="spinBox_9">
                <property name="geometry">
                 <rect>
@@ -757,6 +781,8 @@ color: rgb(255, 255, 255);</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QSpinBox" name="spinBox_11">
                <property name="geometry">
                 <rect>
@@ -783,6 +809,7 @@ color: rgb(255, 255, 255);</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
               <widget class="QSpinBox" name="spinBox_13">
                <property name="geometry">
                 <rect>
@@ -809,6 +836,8 @@ color: rgb(255, 255, 255);</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
               </widget>
+<<<<<<< HEAD
+=======
               <widget class="QSpinBox" name="spinBox_15">
                <property name="geometry">
                 <rect>
@@ -835,6 +864,7 @@ color: rgb(255, 255, 255);</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
               </widget>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
               <widget class="QSpinBox" name="spinBox_10">
                <property name="geometry">
                 <rect>
@@ -920,7 +950,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <rect>
                 <x>0</x>
                 <y>20</y>
+<<<<<<< HEAD
+                <width>561</width>
+=======
                 <width>521</width>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                 <height>171</height>
                </rect>
               </property>
@@ -972,7 +1006,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>Atrial Sensitivity</string>
+=======
                 <string>Ventricular Amplitude</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QLabel" name="label_21">
@@ -1033,7 +1071,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>Rate Smoothing</string>
+=======
                 <string>Ventricular Pulse Width</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QSpinBox" name="spinBox_19">
@@ -1094,17 +1136,28 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
               <widget class="QLabel" name="label_25">
                <property name="geometry">
                 <rect>
+<<<<<<< HEAD
+                 <x>230</x>
+                 <y>100</y>
+                 <width>41</width>
+                 <height>20</height>
+=======
                  <x>240</x>
                  <y>100</y>
                  <width>31</width>
                  <height>16</height>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                 </rect>
                </property>
                <property name="styleSheet">
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>PVARP</string>
+=======
                 <string>VRP</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QSpinBox" name="spinBox_22">
@@ -1156,6 +1209,32 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 </rect>
                </property>
               </widget>
+<<<<<<< HEAD
+              <widget class="QLabel" name="label_7">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>110</y>
+                 <width>61</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Hysteresis</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="spinBox_5">
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>110</y>
+                 <width>42</width>
+                 <height>22</height>
+                </rect>
+               </property>
+              </widget>
+=======
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
              </widget>
              <widget class="QGraphicsView" name="graphicsView_3">
               <property name="geometry">
@@ -1243,7 +1322,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 <rect>
                  <x>20</x>
                  <y>100</y>
+<<<<<<< HEAD
+                 <width>121</width>
+=======
                  <width>101</width>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                  <height>16</height>
                 </rect>
                </property>
@@ -1251,7 +1334,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>Ventricular Sensitivity</string>
+=======
                 <string>Atrial Amplitude</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QSpinBox" name="spinBox_25">
@@ -1360,17 +1447,28 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
               <widget class="QLabel" name="label_33">
                <property name="geometry">
                 <rect>
+<<<<<<< HEAD
+                 <x>210</x>
+                 <y>140</y>
+                 <width>61</width>
+                 <height>20</height>
+=======
                  <x>240</x>
                  <y>140</y>
                  <width>31</width>
                  <height>16</height>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                 </rect>
                </property>
                <property name="styleSheet">
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>Hysteresis</string>
+=======
                 <string>ARP</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QSpinBox" name="spinBox_28">
@@ -1441,7 +1539,11 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                 <string notr="true">color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
+<<<<<<< HEAD
+                <string>Rate Smoothing</string>
+=======
                 <string>Atrial Pulse Width</string>
+>>>>>>> b025c5667cdee8a21418109ba9e6f1f43cb8640e
                </property>
               </widget>
               <widget class="QSpinBox" name="spinBox_31">

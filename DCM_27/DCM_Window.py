@@ -7,7 +7,7 @@ from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTi
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PySide6.QtWidgets import *
 
-from ui_mainwindow12 import Ui_DCM
+from mainwindow13 import Ui_DCM
 
 class DCM(QMainWindow):
     def __init__(self):
@@ -34,6 +34,18 @@ class DCM(QMainWindow):
 
         # PAGE 4
         self.ui.btn_page_4.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_4))
+
+        # PAGE 5
+        self.ui.btn_page_5.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_5))
+
+        # PAGE 6
+        self.ui.btn_page_6.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_6))
+
+        # PAGE 7
+        self.ui.btn_page_7.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_7))
+
+        # PAGE 8
+        self.ui.btn_page_8.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_8))
 
 
         ## SHOW ==> MAIN WINDOW

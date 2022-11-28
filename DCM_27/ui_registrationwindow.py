@@ -26,6 +26,8 @@ class Ui_Registration(object):
         Registration.resize(640, 480)
         Registration.setAutoFillBackground(False)
         Registration.setStyleSheet(u"background-color:'lightgreen'")
+        self.centralwidget = QWidget(Registration)
+        self.centralwidget.setObjectName(u"centralwidget")
         self.registration_label = QLabel(Registration)
         self.registration_label.setObjectName(u"registration_label")
         self.registration_label.setGeometry(QRect(230, 60, 171, 51))
@@ -91,10 +93,16 @@ class Ui_Registration(object):
         self.backToLogin_button.setGeometry(QRect(230, 330, 81, 24))
         self.backToLogin_button.setStyleSheet(u"background-color:'white'")
 
+        #Error Messages
+        self.missingFirstName_msg = QLabel(self.centralwidget)
+        self.missingFirstName_msg.setObjectName(u"missingFirstName_msg")
+        self.missingFirstName_msg.setGeometry(QRect(260, 190, 200, 15))
+        self.missingFirstName_msg.setStyleSheet(u"color:'red'")
+        self.missingFirstName_msg.hide()
+
         self.retranslateUi(Registration)
 
         QMetaObject.connectSlotsByName(Registration)
-
     def get_create_button(self):
         return self.create_button
 
@@ -114,6 +122,9 @@ class Ui_Registration(object):
         return self.passwordInput
     # setupUi
 
+    def get_missingFirstName_msg(self):
+        return self.missingFirstName_msg
+
     def retranslateUi(self, Registration):
         Registration.setWindowTitle(QCoreApplication.translate("Registration", u"Registration", None))
         self.registration_label.setText(QCoreApplication.translate("Registration", u"Registration", None))
@@ -131,5 +142,5 @@ class Ui_Registration(object):
         self.firstnameInput.setPlaceholderText(QCoreApplication.translate("Registration", u"e.g. Abdul Nasir", None))
         self.password_label_2.setText(QCoreApplication.translate("Registration", u"Last Name:", None))
         self.backToLogin_button.setText(QCoreApplication.translate("Registration", u"Back to Login", None))
+        self.missingFirstName_msg.setText(QCoreApplication.translate("MainWindow", u"Please enter your first name!", None))
     # retranslateUi
-

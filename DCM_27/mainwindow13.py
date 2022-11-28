@@ -976,6 +976,12 @@ class Ui_DCM(object):
 
         self.verticalLayout.addWidget(self.Content)
 
+        self.saveButton = QPushButton(self.frame_top)
+        self.saveButton.setObjectName(u"saveButton")
+        self.saveButton.setGeometry(QRect(825, 5, 80, 30))
+        self.saveButton.setStyleSheet(u"font: 75 14pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);""background-color: rgb(85, 170, 255);")
+
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -988,6 +994,457 @@ class Ui_DCM(object):
         # self.pushButton.clicked.connect(lambda: self.draw())
         # self.pushButton_2.clicked.connect(lambda: self.clear())
     # setupUi
+
+    #GETTERS
+    def get_saveButton(self):
+        return self.saveButton
+
+    def get_createGraph_AOO(self):
+        return self.pushButton
+
+    def get_createGraph_VOO(self):
+        return self.pushButton_3
+
+    def get_createGraph_AAI(self):
+        return self.pushButton_5
+
+    def get_createGraph_VVI(self):
+        return self.pushButton_8
+
+    def get_createGraph_AOOR(self):
+        return self.pushButton_10
+
+    def get_createGraph_VOOR(self):
+        return self.pushButton_11
+
+    def get_createGraph_AAIR(self):
+        return self.pushButton_14
+
+    def get_createGraph_VVIR(self):
+        return self.pushButton_15
+
+    def get_AOO_LRL(self):
+        return self.spinBox #AOO: Lower Rate Limit
+
+    def get_AOO_URL(self):
+        return self.spinBox_2 #AOO: Upper Rate Limit
+
+    def get_AOO_AA(self):
+        return self.spinBox_3 #AOO: Atrial Amplitude
+
+    def get_AOO_APW(self):
+        return self.spinBox_4 #AOO: Atrial Pulse Width
+
+    def get_VOO_LRL(self):
+        return self.spinBox_9 #VOO: Lower Rate Limit
+
+    def get_VOO_URL(self):
+        return self.spinBox_10 #VOO: Upper Rate Limit
+
+    def get_VOO_VA(self):
+        return self.spinBox_13 #VOO: Ventricular Amplitude
+
+    def get_VOO_VPW(self):
+        return self.spinBox_14 #VOO: Ventricular Pulse Width
+
+    def get_AAI_LRL(self):
+        return self.spinBox_20 #AAI: Lower Rate Limit
+
+    def get_AAI_URL(self):
+        return self.spinBox_19 #AAI: Upper Rate Limit
+
+    def get_AAI_AA(self):
+        return self.spinBox_21 #AAI: Atrial Amplitude
+
+    def get_AAI_APW(self):
+        return self.spinBox_18 #AAI: Atrial Pulse Width
+
+    def get_AAI_AS(self):
+        return self.spinBox_17 #AAI: Atrial Sensitivity
+
+    def get_AAI_RS(self):
+        return self.spinBox_22 #AAI: Rate Smoothing
+
+    def get_AAI_PVARP(self):
+        return self.spinBox_23 #AAI: PVARP
+
+    def get_AAI_ARP(self):
+        return self.spinBox_24 #AAI: ARP
+
+    def get_AAI_H(self):
+        return self.spinBox_5 #AAI: Hysteresis
+
+    def get_VVI_LRL(self):
+        return self.spinBox_28 #VVI: Lower Rate Limit
+
+    def get_VVI_URL(self):
+        return self.spinBox_27 #VVI: Upper Rate Limit
+
+    def get_VVI_VS(self):
+        return self.spinBox_29 #VVI: Ventricular Sensitivity
+
+    def get_VVI_RS(self):
+        return self.spinBox_26 #VVI: Rate Smoothing
+
+    def get_VVI_VA(self):
+        return self.spinBox_25 #VVI: Ventricular Amplitude
+
+    def get_VVI_VPW(self):
+        return self.spinBox_30 #VVI: Ventricular Pulse Width
+
+    def get_VVI_VRP(self):
+        return self.spinBox_31 #VVI: VRP
+
+    def get_VVI_H(self):
+        return self.spinBox_32 #VVI: Hysteresis
+
+    def get_AOOR_LRL(self):
+        return self.spinBox_AOOR_LRL #AOOR: Lower Rate Limit
+
+    def get_AOOR_URL(self):
+        return self.spinBox_AOOR_URL #AOOR: Upper Rate Limit
+
+    def get_AOOR_MSR(self):
+        return self.spinBox_AOOR_MSR #AOOR: Maximum Sensor Rate
+
+    def get_AOOR_AT(self):
+        return self.spinBox_AOOR_AT #AOOR: Activity Threshold
+
+    def get_AOOR_AA(self):
+        return self.spinBox_AOOR_AA #AOOR: Atrial Amplitude
+
+    def get_AOOR_APW(self):
+        return self.spinBox_AOOR_APW #AOOR: Atrial Pulse Width
+
+    def get_AOOR_ReactT(self):
+        return self.spinBox_AOOR_REACT_T #AOOR: Reaction Time
+
+    def get_AOOR_RF(self):
+        return self.spinBox_AOOR_RF #AOOR: Response Factor
+
+    def get_AOOR_RecT(self):
+        return self.spinBox_Rec_T #AOOR: Recovery Time
+
+    def get_VOOR_LRL(self):
+        return self.spinBox_VOOR_LRL #VOOR: Lower Rate Limit
+
+    def get_VOOR_URL(self):
+        return self.spinBox_VOOR_URL #VOOR: Upper Rate Limit
+
+    def get_VOOR_AT(self):
+        return self.spinBox_VOOR_AT #VOOR: Activity Threshold
+
+    def get_VOOR_MSR(self):
+        return self.spinBox_VOOR_MSR #VOOR: Maximum Sensor Rate
+
+    def get_VOOR_VA(self):
+        return self.spinBox_VOOR_VA #VOOR: Ventricular Amplitude
+
+    def get_VOOR_VPW(self):
+        return self.spinBox_VOOR_VPW #VOOR: Ventricular Pulse Width
+
+    def get_VOOR_ReactT(self):
+        return self.spinBox_VOOR_React_T #VOOR: Reaction Time
+
+    def get_VOOR_RF(self):
+        return self.spinBox_VOOR_RF #VOOR: Response Factor
+
+    def get_VOOR_RecT(self):
+        return self.spinBox_VOOR_Rec_T #VOOR: Recovery Time
+
+    def get_AAIR_LRL(self):
+        return self.spinBox_AAIR_LRL #AAIR: Lower Rate Limit
+
+    def get_AAIR_URL(self):
+        return self.spinBox_AAIR_URL #AAIR: Upper Rate Limit
+
+    def get_AAIR_MSR(self):
+        return self.spinBox_AAIR_MSR #AAIR: Maximum Sensor Rate
+
+    def get_AAIR_AS(self):
+        return self.spinBox_AAIR_AS #AAIR: Atrial Sensitivity
+
+    def get_AAIR_AA(self):
+        return self.spinBox_AAIR_AA #AAIR: Atrial Amplitude
+
+    def get_AAIR_APW(self):
+        return self.spinBox_AAIR_APW #AAIR: Atrial Pulse Width
+
+    def get_AAIR_ARP(self):
+        return self.spinBox_AAIR_ARP #AAIR: ARP
+
+    def get_AAIR_PVARP(self):
+        return self.spinBox_AAIR_PVARP #AAIR: PVARP
+
+    def get_AAIR_AT(self):
+        return self.spinBox_AAIR_AT #AAIR: Activity Threshold
+
+    def get_AAIR_ReactT(self):
+        return self.spinBox_AAIR_React_T #AAIR: Reaction Time
+
+    def get_AAIR_RS(self):
+        return self.spinBox_AAIR_RS #AAIR: Rate Smoothing
+
+    def get_AAIR_H(self):
+        return self.spinBox_AAIR_H #AAIR: Hysteresis
+
+    def get_AAIR_RecT(self):
+        return self.spinBox_AAIR_Rec_T #AAIR: Recovery Time
+
+    def get_AAIR_RF(self):
+        return self.spinBox_AAIR_Res_F #AAIR: Response Factor
+
+    def get_VVIR_LRL(self):
+            return self.spinBox_VVIR_LRL  # VVIR: Lower Rate Limit
+
+    def get_VVIR_URL(self):
+            return self.spinBox_VVIR_URL  # VVIR: Upper Rate Limit
+
+    def get_VVIR_MSR(self):
+            return self.spinBox_VVIR_MSR  # VVIR: Maximum Sensor Rate
+
+    def get_VVIR_VS(self):
+            return self.spinBox_VVIR_VS  # VVIR: Ventricular Sensitivity
+
+    def get_VVIR_VA(self):
+            return self.spinBox_VVIR_VA  # VVIR: Ventricular Amplitude
+
+    def get_VVIR_VPW(self):
+            return self.spinBox_VVIR_VPW  # VVIR: Ventricular Pulse Width
+
+    def get_VVIR_VRP(self):
+            return self.spinBox_VVIR_VRP  # VVIR: VRP
+
+    def get_VVIR_H(self):
+            return self.spinBox_VVIR_H  # VVIR: Hysteresis
+
+    def get_VVIR_AT(self):
+            return self.spinBox_VVIR_AT  # VVIR: Activity Threshold
+
+    def get_VVIR_ReactT(self):
+            return self.spinBox_VVIR_Reac_T  # VVIR: Reaction Time
+
+    def get_VVIR_RS(self):
+            return self.spinBox_VVIR_RS  # VVIR: Rate Smoothing
+
+    def get_VVIR_RF(self):
+            return self.spinBox_VVIR_Res_F  # VVIR: Response Factor
+
+    def get_VVIR_RecT(self):
+            return self.spinBox_VVIR_Rec_T  # VVIR: Recovery Time
+
+
+
+    #SETTERS
+    def set_AOO_LRL(self, value):
+        self.spinBox.setValue(value)  #AOO: Lower Rate Limit
+
+    def set_AOO_URL(self, value):
+        self.spinBox_2.setValue(value) #AOO: Upper Rate Limit
+
+    def set_AOO_AA(self, value):
+        self.spinBox_3.setValue(value) #AOO: Atrial Amplitude
+
+    def set_AOO_APW(self, value):
+        self.spinBox_4.setValue(value) #AOO: Atrial Pulse Width
+
+    def set_VOO_LRL(self, value):
+        self.spinBox_9.setValue(value) #VOO: Lower Rate Limit
+
+    def set_VOO_URL(self, value):
+        self.spinBox_10.setValue(value) #VOO: Upper Rate Limit
+
+    def set_VOO_VA(self, value):
+        self.spinBox_13.setValue(value) #VOO: Ventricular Amplitude
+
+    def set_VOO_VPW(self, value):
+        self.spinBox_14.setValue(value) #VOO: Ventricular Pulse Width
+
+    def set_AAI_LRL(self, value):
+        self.spinBox_20.setValue(value) #AAI: Lower Rate Limit
+
+    def set_AAI_URL(self, value):
+        self.spinBox_19.setValue(value) #AAI: Upper Rate Limit
+
+    def set_AAI_AA(self, value):
+        self.spinBox_21.setValue(value) #AAI: Atrial Amplitude
+
+    def set_AAI_APW(self, value):
+        self.spinBox_18.setValue(value) #AAI: Atrial Pulse Width
+
+    def set_AAI_AS(self, value):
+        self.spinBox_17.setValue(value) #AAI: Atrial Sensitivity
+
+    def set_AAI_RS(self, value):
+        self.spinBox_22.setValue(value) #AAI: Rate Smoothing
+
+    def set_AAI_PVARP(self, value):
+        self.spinBox_23.setValue(value) #AAI: PVARP
+
+    def set_AAI_ARP(self, value):
+        self.spinBox_24.setValue(value) #AAI: ARP
+
+    def set_AAI_H(self, value):
+        self.spinBox_5.setValue(value) #AAI: Hysteresis
+
+    def set_VVI_LRL(self, value):
+        self.spinBox_28.setValue(value) #VVI: Lower Rate Limit
+
+    def set_VVI_URL(self, value):
+        self.spinBox_27.setValue(value) #VVI: Upper Rate Limit
+
+    def set_VVI_VS(self, value):
+        self.spinBox_29.setValue(value) #VVI: Ventricular Sensitivity
+
+    def set_VVI_RS(self, value):
+        self.spinBox_26.setValue(value) #VVI: Rate Smoothing
+
+    def set_VVI_VA(self, value):
+        self.spinBox_25.setValue(value) #VVI: Ventricular Amplitude
+
+    def set_VVI_VPW(self, value):
+        self.spinBox_30.setValue(value) #VVI: Ventricular Pulse Width
+
+    def set_VVI_VRP(self, value):
+        self.spinBox_31.setValue(value) #VVI: VRP
+
+    def set_VVI_H(self, value):
+        self.spinBox_32.setValue(value) #VVI: Hysteresis
+
+    def set_AOOR_LRL(self, value):
+        self.spinBox_AOOR_LRL.setValue(value) #AOOR: Lower Rate Limit
+
+    def set_AOOR_URL(self, value):
+        self.spinBox_AOOR_URL.setValue(value) #AOOR: Upper Rate Limit
+
+    def set_AOOR_MSR(self, value):
+        self.spinBox_AOOR_MSR.setValue(value) #AOOR: Maximum Sensor Rate
+
+    def set_AOOR_AT(self, value):
+        self.spinBox_AOOR_AT.setValue(value) #AOOR: Activity Threshold
+
+    def set_AOOR_AA(self, value):
+        self.spinBox_AOOR_AA.setValue(value) #AOOR: Atrial Amplitude
+
+    def set_AOOR_APW(self, value):
+        self.spinBox_AOOR_APW.setValue(value) #AOOR: Atrial Pulse Width
+
+    def set_AOOR_ReactT(self, value):
+        self.spinBox_AOOR_REACT_T.setValue(value) #AOOR: Reaction Time
+
+    def set_AOOR_RF(self, value):
+        self.spinBox_AOOR_RF.setValue(value) #AOOR: Response Factor
+
+    def set_AOOR_RecT(self, value):
+        self.spinBox_Rec_T.setValue(value) #AOOR: Recovery Time
+
+    def set_VOOR_LRL(self, value):
+        self.spinBox_VOOR_LRL.setValue(value) #VOOR: Lower Rate Limit
+
+    def set_VOOR_URL(self, value):
+        self.spinBox_VOOR_URL.setValue(value) #VOOR: Upper Rate Limit
+
+    def set_VOOR_AT(self, value):
+        self.spinBox_VOOR_AT.setValue(value) #VOOR: Activity Threshold
+
+    def set_VOOR_MSR(self, value):
+        self.spinBox_VOOR_MSR.setValue(value) #VOOR: Maximum Sensor Rate
+
+    def set_VOOR_VA(self, value):
+        self.spinBox_VOOR_VA.setValue(value) #VOOR: Ventricular Amplitude
+
+    def set_VOOR_VPW(self, value):
+        self.spinBox_VOOR_VPW.setValue(value) #VOOR: Ventricular Pulse Width
+
+    def set_VOOR_ReactT(self, value):
+        self.spinBox_VOOR_React_T.setValue(value) #VOOR: Reaction Time
+
+    def set_VOOR_RF(self, value):
+        self.spinBox_VOOR_RF.setValue(value) #VOOR: Response Factor
+
+    def set_VOOR_RecT(self, value):
+        self.spinBox_VOOR_Rec_T.setValue(value) #VOOR: Recovery Time
+
+    def set_AAIR_LRL(self, value):
+        self.spinBox_AAIR_LRL.setValue(value) #AAIR: Lower Rate Limit
+
+    def set_AAIR_URL(self, value):
+        self.spinBox_AAIR_URL.setValue(value) #AAIR: Upper Rate Limit
+
+    def set_AAIR_MSR(self, value):
+        self.spinBox_AAIR_MSR.setValue(value) #AAIR: Maximum Sensor Rate
+
+    def set_AAIR_AS(self, value):
+        self.spinBox_AAIR_AS.setValue(value) #AAIR: Atrial Sensitivity
+
+    def set_AAIR_AA(self, value):
+        self.spinBox_AAIR_AA.setValue(value) #AAIR: Atrial Amplitude
+
+    def set_AAIR_APW(self, value):
+        self.spinBox_AAIR_APW.setValue(value) #AAIR: Atrial Pulse Width
+
+    def set_AAIR_ARP(self, value):
+        self.spinBox_AAIR_ARP.setValue(value) #AAIR: ARP
+
+    def set_AAIR_PVARP(self, value):
+        self.spinBox_AAIR_PVARP.setValue(value) #AAIR: PVARP
+
+    def set_AAIR_AT(self, value):
+        self.spinBox_AAIR_AT.setValue(value) #AAIR: Activity Threshold
+
+    def set_AAIR_ReactT(self, value):
+        self.spinBox_AAIR_React_T.setValue(value) #AAIR: Reaction Time
+
+    def set_AAIR_RS(self, value):
+        self.spinBox_AAIR_RS.setValue(value) #AAIR: Rate Smoothing
+
+    def set_AAIR_H(self, value):
+        self.spinBox_AAIR_H.setValue(value) #AAIR: Hysteresis
+
+    def set_AAIR_RecT(self, value):
+        self.spinBox_AAIR_Rec_T.setValue(value) #AAIR: Recovery Time
+
+    def set_AAIR_RF(self, value):
+        self.spinBox_AAIR_Res_F.setValue(value) #AAIR: Response Factor
+
+    def set_VVIR_LRL(self, value):
+            self.spinBox_VVIR_LRL.setValue(value)  # VVIR: Lower Rate Limit
+
+    def set_VVIR_URL(self, value):
+            self.spinBox_VVIR_URL.setValue(value)  # VVIR: Upper Rate Limit
+
+    def set_VVIR_MSR(self, value):
+            self.spinBox_VVIR_MSR.setValue(value)  # VVIR: Maximum Sensor Rate
+
+    def set_VVIR_VS(self, value):
+            self.spinBox_VVIR_VS.setValue(value)  # VVIR: Ventricular Sensitivity
+
+    def set_VVIR_VA(self, value):
+            self.spinBox_VVIR_VA.setValue(value)  # VVIR: Ventricular Amplitude
+
+    def set_VVIR_VPW(self, value):
+            self.spinBox_VVIR_VPW.setValue(value)  # VVIR: Ventricular Pulse Width
+
+    def set_VVIR_VRP(self, value):
+            self.spinBox_VVIR_VRP.setValue(value)  # VVIR: VRP
+
+    def set_VVIR_H(self, value):
+            self.spinBox_VVIR_H.setValue(value)  # VVIR: Hysteresis
+
+    def set_VVIR_AT(self, value):
+            self.spinBox_VVIR_AT.setValue(value)  # VVIR: Activity Threshold
+
+    def set_VVIR_ReactT(self, value):
+            self.spinBox_VVIR_Reac_T.setValue(value)  # VVIR: Reaction Time
+
+    def set_VVIR_RS(self, value):
+            self.spinBox_VVIR_RS.setValue(value)  # VVIR: Rate Smoothing
+
+    def set_VVIR_RF(self, value):
+            self.spinBox_VVIR_Res_F.setValue(value)  # VVIR: Response Factor
+
+    def set_VVIR_RecT(self, value):
+            self.spinBox_VVIR_Rec_T.setValue(value)  # VVIR: Recovery Time
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
@@ -1102,6 +1559,7 @@ class Ui_DCM(object):
         self.label_159.setText(QCoreApplication.translate("MainWindow", u"Response Factor", None))
         self.label_160.setText(QCoreApplication.translate("MainWindow", u"Recovery Time ", None))
         self.label_80.setText(QCoreApplication.translate("MainWindow", u"VVIR", None))
+        self.saveButton.setText(QCoreApplication.translate("MainWindow", u"Save", None))
     # retranslateUi
 
     def draw(self):

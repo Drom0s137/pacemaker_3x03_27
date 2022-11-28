@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox, QLabel, QLineEdit, QMainWindow
 from PySide6.QtGui import QCloseEvent, QFont, QIcon
+from PySide6.QtCore import (QCoreApplication, QRect)
 from ui_registrationwindow import Ui_Registration
 
 class RegistrationWindow(QWidget):
@@ -11,12 +12,6 @@ class RegistrationWindow(QWidget):
         self.setup()
 
     def setup(self):
-        # btn_quit = QPushButton("Quit", self)
-        # btn_quit.clicked.connect(QApplication.instance().quit)
-        # btn_quit.resize(btn_quit.sizeHint())
-        # btn_quit.move(500, 500)
-        # btn_quit.setStyleSheet('background-color:white')
-
         self.setGeometry(400, 200, 625, 500)
         self.setWindowTitle("Pacemaker DCM Registration")
         self.setWindowIcon(QIcon('icons/pacemaker_device_icon.png'))
@@ -25,6 +20,7 @@ class RegistrationWindow(QWidget):
 
         self.ui.get_create_button().clicked.connect(self.createButton_check)
         self.ui.get_backToLogin_button().clicked.connect(self.backToLoginButton_check)
+
 
     def num_of_users(self):
         user_count = 0
@@ -71,6 +67,10 @@ class RegistrationWindow(QWidget):
             if (self.ui.get_firstnameInput().text() != "" and self.ui.get_lastnameInput().text() != "" and self.ui.get_usernameInput().text() != "" and self.ui.get_passwordInput().text() != ""):
                 if (self.charactersCheck(self.ui.get_usernameInput().text())==False):
                     print("Invalid characters used... Please use letters, numbers, dashes, and/or underscores only!")
+                elif (len(self.ui.get_usernameInput().text())<4 or len(self.ui.get_usernameInput().text())>20):
+                    print("Error! Invalid number of characters used for the username, please use 4-20 characters.")
+                elif (len(self.ui.get_passwordInput().text())<8 or len(self.ui.get_passwordInput().text())>20):
+                    print("Error! Invalid number of characters used for the password, please use 8-20 characters.")
                 else:
                     # Check if user is already registered
                     if self.userIsRegistered(self.ui.get_usernameInput().text()):
@@ -78,9 +78,88 @@ class RegistrationWindow(QWidget):
                     elif (self.num_of_users() == 10):
                         print("Sorry, the maximum users threshold (10) has already been reached...")
                     else:
-                        with open('Local_Database.txt', 'a') as f:
-                            f.write("\n" + self.ui.get_usernameInput().text())
-                            f.write("\n" + self.ui.get_passwordInput().text())
+                        with open('Local_Database.txt', 'a') as user_login:
+                            user_login.write(self.ui.get_usernameInput().text() + "\n")
+                            user_login.write(self.ui.get_passwordInput().text() + "\n")
+                        with open("Users_data/"+self.ui.get_usernameInput().text()+".txt", "w") as user_data:
+                            user_data.write("AOO\n") #MODE
+                            user_data.write("0\n") #Lower Rate Limit
+                            user_data.write("0\n") #Upper Rate Limit
+                            user_data.write("0\n") #Atrial Amplitude
+                            user_data.write("0\n") #Atrial Pulse Width
+                            user_data.write("VOO\n") #MODE
+                            user_data.write("0\n") #Lower Rate Limit
+                            user_data.write("0\n") #Upper Rate Limit
+                            user_data.write("0\n") #Ventricular Amplitude
+                            user_data.write("0\n") #Ventricular Pulse Width
+                            user_data.write("AAI\n") #MODE
+                            user_data.write("0\n") #Lower Rate Limit
+                            user_data.write("0\n") #Upper Rate Limit
+                            user_data.write("0\n") #Atrial Amplitude
+                            user_data.write("0\n") #Atrial Pulse Width
+                            user_data.write("0\n") #Atrial Sensitivity
+                            user_data.write("0\n") #Rate Smoothing
+                            user_data.write("0\n") #PVARP
+                            user_data.write("0\n") #ARP
+                            user_data.write("0\n") #Hysteresis
+                            user_data.write("VVI\n") #MODE
+                            user_data.write("0\n") #Lower Rate Limit
+                            user_data.write("0\n") #Upper Rate Limit
+                            user_data.write("0\n") #Ventricular Sensitivity
+                            user_data.write("0\n") #Rate Smoothing
+                            user_data.write("0\n") #Ventricular Amplitude
+                            user_data.write("0\n") #Ventricular Pulse Width
+                            user_data.write("0\n") #VRP
+                            user_data.write("0\n") #Hysteresis
+                            user_data.write("AOOR\n")  # MODE
+                            user_data.write("0\n")  # Lower Rate Limit
+                            user_data.write("0\n")  # Upper Rate Limit
+                            user_data.write("0\n")  # Maximum Sensor Rate
+                            user_data.write("0\n")  # Activity Threshold
+                            user_data.write("0\n")  # Atrial Amplitude
+                            user_data.write("0\n")  # Atrial Pulse Width
+                            user_data.write("0\n")  # Reaction Time
+                            user_data.write("0\n")  # Response Factor
+                            user_data.write("0\n")  # Recovery Time
+                            user_data.write("VOOR\n")  # MODE
+                            user_data.write("0\n")  # Lower Rate Limit
+                            user_data.write("0\n")  # Upper Rate Limit
+                            user_data.write("0\n")  # Activity Threshold
+                            user_data.write("0\n")  # Maximum Sensor Rate
+                            user_data.write("0\n")  # Ventricular Amplitude
+                            user_data.write("0\n")  # Ventricular Pulse Width
+                            user_data.write("0\n")  # Reaction Time
+                            user_data.write("0\n")  # Response Factor
+                            user_data.write("0\n")  # Recovery Time
+                            user_data.write("AAIR\n")  # MODE
+                            user_data.write("0\n")  # Lower Rate Limit
+                            user_data.write("0\n")  # Upper Rate Limit
+                            user_data.write("0\n")  # Maximum Sensor Rate
+                            user_data.write("0\n")  # Atrial Sensitivity
+                            user_data.write("0\n")  # Atrial Amplitude
+                            user_data.write("0\n")  # Atrial Pulse Width
+                            user_data.write("0\n")  # ARP
+                            user_data.write("0\n")  # PVARP
+                            user_data.write("0\n")  # Activity Threshold
+                            user_data.write("0\n")  # Reaction Time
+                            user_data.write("0\n")  # Rate Smoothing
+                            user_data.write("0\n")  # Hysteresis
+                            user_data.write("0\n")  # Recovery Time
+                            user_data.write("0\n")  # Response Factor
+                            user_data.write("VVIR\n")  # MODE
+                            user_data.write("0\n")  # Lower Rate Limit
+                            user_data.write("0\n")  # Upper Rate Limit
+                            user_data.write("0\n")  # Maximum Sensor Rate
+                            user_data.write("0\n")  # Ventricular Sensitivity
+                            user_data.write("0\n")  # Ventricular Amplitude
+                            user_data.write("0\n")  # Ventricular Pulse Width
+                            user_data.write("0\n")  # VRP
+                            user_data.write("0\n")  # Hysteresis
+                            user_data.write("0\n")  # Activity Threshold
+                            user_data.write("0\n")  # Reaction Time
+                            user_data.write("0\n")  # Rate Smoothing
+                            user_data.write("0\n")  # Response Factor
+                            user_data.write("0\n")  # Recovery Time
                         self.close()
 
     def backToLoginButton_check(self):

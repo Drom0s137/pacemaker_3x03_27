@@ -46,6 +46,7 @@ class Ui_MainWindow(object):
         self.passwordInput.setObjectName(u"passwordInput")
         self.passwordInput.setGeometry(QRect(240, 200, 201, 21))
         self.passwordInput.setStyleSheet(u"background-color:'white'")
+        self.passwordInput.setEchoMode(QLineEdit.Password) # hide password characters (on screen)
         self.username_label = QLabel(self.centralwidget)
         self.username_label.setObjectName(u"username_label")
         self.username_label.setGeometry(QRect(180, 155, 61, 31))
@@ -108,17 +109,20 @@ class Ui_MainWindow(object):
             self.invalidUsername_label.hide()
             self.incorrectPassword_label.hide()
             num_of_users = self.num_of_users()
+            #Open local database and check if the user credentials are correct
             with open('Local_Database.txt', 'r') as f:
                 username_check = 0
                 n = range(num_of_users)
                 for i in n:
                     username = f.readline().replace("\n", "")
                     password = f.readline().replace("\n", "")
+                    #Check if user exists
                     if (self.usernameInput.text() == username):
                         username_check = 1
+                        #Check if the password is correct
                         if (self.passwordInput.text() == password):
                             print("Login Successful!")
-                            self.dcm = DCM()
+                            self.dcm = DCM(self.usernameInput.text()) #Successful login, open the user's pacemaker DCM
                         else:
                             self.incorrectPassword_label.show()
                             print("Incorrect Password!")

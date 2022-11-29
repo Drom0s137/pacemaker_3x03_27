@@ -1,7 +1,7 @@
 # pacemaker_3x03_27
 
 **Group #: 27** <br>
-Group members:  <br>
+<br>
 Eddy Su             400263717 <br>
 Daniel Young        400304153 <br>
 Paul Shenoda        400312110 <br>

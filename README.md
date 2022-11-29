@@ -1,11 +1,12 @@
 # pacemaker_3x03_27
 
 **Group #: 27** <br>
-Group members:  Eddy Su             400263717 <br>
-                Daniel Young        400304153 <br>
-                Paul Shenoda        400312110 <br>
-                Abdul Nasir Noori   400325387 <br>
-                Jaideep Pannu       400114712 <br>
+Group members:  <br>
+Eddy Su             400263717 <br>
+Daniel Young        400304153 <br>
+Paul Shenoda        400312110 <br>
+Abdul Nasir Noori   400325387 <br>
+Jaideep Pannu       400114712 <br>
                 
 **The purpose of this project** is to create a pacemaker device using a custom developed PCB. 
 The project is split into two sections: Device Control Monitor (DCM) and Simulink teams. 

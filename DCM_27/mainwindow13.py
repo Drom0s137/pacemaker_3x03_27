@@ -21,6 +21,11 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGraphicsView, QGroupBox,
     QWidget)
 
 from Egram import Egram
+<<<<<<< HEAD
+=======
+
+from pyqtgraph import PlotWidget
+>>>>>>> 22d5728847d376abd214d69ac9d97369cba842a4
 
 from pyqtgraph import PlotWidget
 import serial
@@ -1108,6 +1113,7 @@ class Ui_DCM(object):
 
         QMetaObject.connectSlotsByName(MainWindow)
 
+<<<<<<< HEAD
         self.pushButton.clicked.connect(self.Egram_check_AOO)
         self.pushButton_3.clicked.connect(self.Egram_check_VOO)
         self.pushButton_5.clicked.connect(self.Egram_check_AAI)
@@ -1116,6 +1122,9 @@ class Ui_DCM(object):
         self.pushButton_11.clicked.connect(self.Egram_check_VOOR)
         self.pushButton_14.clicked.connect(self.Egram_check_AAIR)
         self.pushButton_15.clicked.connect(self.Egram_check_VVIR)
+=======
+        self.pushButton.clicked.connect(self.Egram_check)
+>>>>>>> 22d5728847d376abd214d69ac9d97369cba842a4
 
        
 
@@ -1361,6 +1370,7 @@ class Ui_DCM(object):
 
     #GETTERS
 
+<<<<<<< HEAD
     def Egram_check_AOO(self):
             if (self.pushButton.isChecked() == False):
                     # AOO
@@ -1483,6 +1493,12 @@ class Ui_DCM(object):
             if (self.pushButton_15.isChecked() == False):
                     # Open egram
                     self.e = Egram()
+=======
+    def Egram_check(self):
+        if (self.pushButton.isChecked() == False):
+            # Open egram
+            self.e = Egram()
+>>>>>>> 22d5728847d376abd214d69ac9d97369cba842a4
             
     def get_saveButton(self):
         return self.saveButton

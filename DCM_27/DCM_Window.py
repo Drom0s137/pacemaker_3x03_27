@@ -336,8 +336,11 @@ class DCM(QMainWindow):
             Max_Sensor_Rate = struct.pack("B", 0)
             Reaction_Time = struct.pack("B", 0)
 
+            ATR_Egram = struct.pack("B", 0)
+            VENT_Egram = struct.pack("B", 0)
+
             Signal_set = Start + Fn_set + ATR_AMP + ATR_PW + Mode + VENT_AMP + VENT_PW + ARP + VRP + LRL + Activity_Threshold + Response_Factor + Recovery_Time + Max_Sensor_Rate + Reaction_Time
-            Signal_echo = Start + SYNC + ATR_AMP + ATR_PW + Mode + VENT_AMP + VENT_PW + ARP + VRP + LRL + Activity_Threshold + Response_Factor + Recovery_Time + Max_Sensor_Rate + Reaction_Time
+            Signal_echo = Start + SYNC + ATR_AMP + ATR_PW + Mode + VENT_AMP + VENT_PW + ARP + VRP + LRL + Activity_Threshold + Response_Factor + Recovery_Time + Max_Sensor_Rate + Reaction_Time + ATR_Egram + VENT_Egram
 
             # Set parameters (sending data)
             with serial.Serial(frdm_port, 115200) as pacemaker:
@@ -360,8 +363,10 @@ class DCM(QMainWindow):
                 Recovery_Time_rev = data[10]
                 Max_Sensor_Rate_rev = data[11]
                 Reaction_Time_rev = data[12]
+                ATR_Egram = data[13]
+                VENT_Egram = data[14]
 
-                # Verify the stored data in the Pacemaker device
+                #Verify the stored data in the Pacemaker device
                 if (ATR_AMP != ATR_AMP_rev):
                     print("Error! 'Atrial Amplitude' data stored incorrectly.")
                 if (ATR_PW != ATR_PW_rev):

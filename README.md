@@ -20,7 +20,7 @@ Serial Communication is setup between Simulink and DCM to establish mannual cont
 <br>
 <br>
 DCM python library requirements: <br>
-python version: 3.8
+python version: 3.8 <br>
 pip install PySerial PySide6 Matplotlib pyqtgrpah pyqt5
 <br>
 instruction to run: <br>

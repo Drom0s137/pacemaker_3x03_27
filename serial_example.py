@@ -3,7 +3,7 @@ import serial.tools.list_ports
 import struct
 
 # Mac ports, for windows you have to find the ports yourself
-frdm_port = "COM5"
+frdm_port = "COM3"
 
 Start = b'\x16'
 SYNC = b'\x22'

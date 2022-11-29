@@ -16,3 +16,13 @@ The Simulink team creates a model of the packmakers that is capable of taking in
 Supported pace modes include: AOO, VOO, AAI, VVI, AOOR, VOOR, AAIR, VVIR. <br>
 Rate adaptive pacing is enabled to support AAIR and VVIR modes. <br>
 Serial Communication is setup between Simulink and DCM to establish mannual control<br>
+<br>
+<br>
+<br>
+DCM python library requirements: <br>
+python version: 3.8
+pip install PySerial PySide6 Matplotlib pyqtgrpah pyqt5
+<br>
+instruction to run: <br>
+run file "Pacemarker_DCM.py" using: python Pacemarker_DCM.py<br>
+you may log in using user: "User" password: "12345678" <br>

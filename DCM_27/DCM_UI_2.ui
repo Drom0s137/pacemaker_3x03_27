@@ -427,7 +427,7 @@ QPushButton:hover{
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>7</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page_1">
              <widget class="QGroupBox" name="groupBox">
@@ -601,6 +601,56 @@ color: rgb(255, 255, 255);</string>
               <property name="text">
                <string>Clear</string>
               </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_9">
+              <property name="geometry">
+               <rect>
+                <x>670</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_54">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_55">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
              </widget>
             </widget>
             <widget class="QWidget" name="page_2">
@@ -799,6 +849,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
               </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="geometry">
+               <rect>
+                <x>660</x>
+                <y>250</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_56">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_57">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
              </widget>
             </widget>
             <widget class="QWidget" name="page_3">
@@ -1131,6 +1231,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+             <widget class="QGroupBox" name="groupBox_11">
+              <property name="geometry">
+               <rect>
+                <x>670</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_58">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_59">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_4">
              <widget class="QGroupBox" name="groupBox_4">
@@ -1439,6 +1589,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="geometry">
+               <rect>
+                <x>680</x>
+                <y>230</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_60">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_61">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_5">
              <widget class="QGraphicsView" name="graphicsView_5">
@@ -1446,7 +1646,7 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <rect>
                 <x>0</x>
                 <y>201</y>
-                <width>721</width>
+                <width>681</width>
                 <height>231</height>
                </rect>
               </property>
@@ -1770,6 +1970,56 @@ color: rgb(255, 255, 255);</string>
                <string>Create Graph</string>
               </property>
              </widget>
+             <widget class="QGroupBox" name="groupBox_13">
+              <property name="geometry">
+               <rect>
+                <x>680</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_87">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_88">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_6">
              <widget class="QGroupBox" name="groupBox_6">
@@ -2042,7 +2292,7 @@ color: rgb(255, 255, 255);</string>
                <rect>
                 <x>0</x>
                 <y>200</y>
-                <width>721</width>
+                <width>671</width>
                 <height>231</height>
                </rect>
               </property>
@@ -2101,6 +2351,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+             <widget class="QGroupBox" name="groupBox_14">
+              <property name="geometry">
+               <rect>
+                <x>680</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_89">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_90">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_7">
              <widget class="QPushButton" name="pushButton_13">
@@ -2125,7 +2425,7 @@ color: rgb(255, 255, 255);</string>
                <rect>
                 <x>0</x>
                 <y>200</y>
-                <width>721</width>
+                <width>671</width>
                 <height>231</height>
                </rect>
               </property>
@@ -2568,6 +2868,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+             <widget class="QGroupBox" name="groupBox_15">
+              <property name="geometry">
+               <rect>
+                <x>680</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_91">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_92">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_8">
              <widget class="QPushButton" name="pushButton_15">
@@ -2609,7 +2959,7 @@ color: rgb(255, 255, 255);</string>
                <rect>
                 <x>0</x>
                 <y>200</y>
-                <width>721</width>
+                <width>671</width>
                 <height>231</height>
                </rect>
               </property>
@@ -3008,6 +3358,56 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
               </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_16">
+              <property name="geometry">
+               <rect>
+                <x>680</x>
+                <y>240</y>
+                <width>221</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>Legend</string>
+              </property>
+              <widget class="QLabel" name="label_93">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 255);</string>
+               </property>
+               <property name="text">
+                <string>Ventricular</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_94">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>70</y>
+                 <width>71</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(255, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>Atrial</string>
+               </property>
+              </widget>
              </widget>
             </widget>
            </widget>
